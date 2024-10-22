@@ -114,15 +114,3 @@ Las contribuciones son bienvenidas. Por favor, siéntete libre de:
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
-
-## 👏 Agradecimientos
-
-- [Create React App](https://create-react-app.dev/) por el boilerplate inicial
-- [Tailwind CSS](https://tailwindcss.com/) por el framework de estilos
-- [Lucide React](https://lucide.dev/) por los iconos
-
-## 📧 Contacto
-
-Tu Nombre - [@tu_twitter](https://twitter.com/tu_twitter) - email@example.com
-
-Link del proyecto: [https://github.com/tu-usuario/pomodoro-app](https://github.com/tu-usuario/pomodoro-app)
