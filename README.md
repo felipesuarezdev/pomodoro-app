@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# 🍅 Pomodoro Timer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación minimalista de temporizador Pomodoro construida con React y Tailwind CSS. Esta aplicación te ayuda a gestionar tu tiempo utilizando la técnica Pomodoro, alternando entre períodos de trabajo y descanso.
 
-## Available Scripts
+![Pomodoro Timer App Screenshot](/api/placeholder/800/400)
 
-In the project directory, you can run:
+## ✨ Características
 
-### `npm start`
+- ⏰ Temporizador personalizable para períodos de trabajo y descanso
+- 🎨 Interfaz moderna y minimalista
+- 🔄 Cambio automático entre modos de trabajo y descanso
+- 🔊 Notificación sonora al cambiar de modo
+- 📱 Diseño responsivo
+- ⚡ Controles intuitivos (play, pause, reset)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologías Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Tailwind CSS
+- Lucide React (para iconos)
 
-### `npm test`
+## 📋 Prerrequisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Antes de comenzar, asegúrate de tener instalado:
 
-### `npm run build`
+- Node.js (versión 14.0 o superior)
+- npm (normalmente viene con Node.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Instalación
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/pomodoro-app.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navega al directorio del proyecto:
+```bash
+cd pomodoro-app
+```
 
-### `npm run eject`
+3. Instala las dependencias:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Inicia el servidor de desarrollo:
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Abre tu navegador y visita:
+```
+http://localhost:3000
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Dependencias Principales
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```json
+{
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.263.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  }
+}
+```
 
-## Learn More
+## 🎯 Uso
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Selecciona la duración deseada para tu sesión de trabajo (15-60 minutos)
+2. Selecciona la duración deseada para tu descanso (5-20 minutos)
+3. Presiona el botón de play para iniciar el temporizador
+4. Trabaja hasta que suene la alarma
+5. Toma un descanso cuando el temporizador cambie al modo de descanso
+6. Repite el ciclo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠️ Personalización
 
-### Code Splitting
+### Modificar los tiempos disponibles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Puedes modificar las opciones de tiempo editando los arrays `workTimeOptions` y `breakTimeOptions` en el archivo `src/components/PomodoroTimer.js`:
 
-### Analyzing the Bundle Size
+```javascript
+const workTimeOptions = [15, 20, 25, 30, 45, 60];  // Tiempos en minutos
+const breakTimeOptions = [5, 10, 15, 20];          // Tiempos en minutos
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Cambiar colores
 
-### Making a Progressive Web App
+Los colores se pueden personalizar modificando las clases de Tailwind en el componente o ajustando el archivo `tailwind.config.js`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 Scripts Disponibles
 
-### Advanced Configuration
+- `npm start`: Inicia el servidor de desarrollo
+- `npm test`: Ejecuta los tests
+- `npm run build`: Construye la aplicación para producción
+- `npm run eject`: Expone las configuraciones de Create React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝 Contribuir
 
-### Deployment
+Las contribuciones son bienvenidas. Por favor, siéntete libre de:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Hacer un Fork del proyecto
+2. Crear una rama para tu función: `git checkout -b feature/AmazingFeature`
+3. Commit de tus cambios: `git commit -m 'Add: AmazingFeature'`
+4. Push a la rama: `git push origin feature/AmazingFeature`
+5. Abrir un Pull Request
 
-### `npm run build` fails to minify
+## 📄 Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+## 👏 Agradecimientos
+
+- [Create React App](https://create-react-app.dev/) por el boilerplate inicial
+- [Tailwind CSS](https://tailwindcss.com/) por el framework de estilos
+- [Lucide React](https://lucide.dev/) por los iconos
+
+## 📧 Contacto
+
+Tu Nombre - [@tu_twitter](https://twitter.com/tu_twitter) - email@example.com
+
+Link del proyecto: [https://github.com/tu-usuario/pomodoro-app](https://github.com/tu-usuario/pomodoro-app)
